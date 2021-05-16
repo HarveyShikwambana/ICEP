@@ -1,0 +1,112 @@
+
+body {
+
+margin: 0px;
+padding: 0px;
+background: url(index/login.jpg);
+background-size: cover;
+background-position: center;
+}
+
+
+.bodyDiv{
+
+display: grid;
+grid-template-columns: 1fr;
+
+}
+
+/* Top Bar with links */
+
+.roomContainer {
+	display: flex;
+        justify-content: space-between;
+        padding: 38px;
+        text-transform: uppercase;
+
+
+}
+.roomContainer a {
+
+       color: #8a8a8a;
+       text-decoraction: none;
+       transition: color 0.5s;
+
+}
+
+.roomContainer a:hover {
+
+       color: black;
+}
+
+.roomContainer:hover {
+
+       border-bottom: 1px solid black;
+       
+}
+
+
+/* Image Background for rooms */
+.portfolioItemsWrapper {
+
+  display: grid;
+  grid-template-columns: 1fr
+}
+
+
+.portfolioItemWrapper {
+
+position: relative;
+
+}
+
+
+.portfolioImgBackground {
+
+height: 350px;
+width: 100%;
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat; 
+}
+
+
+
+.imgTextWrapper{
+
+position: absolute;
+top: 0;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+height: 100%;
+text-align: center;
+padding-left: 550px;
+padding-right: 100px;
+}
+
+
+/* Darken and Desc effects */
+
+.imgTextWrapper .subtitle{
+
+transition: 1s;
+color: transparent;
+font-weight: 600;
+}
+
+.imgTextWrapper:hover .subtitle {
+font-weight: 600;
+color: lightseagreen;
+}
+
+
+.imgDarken {
+
+transition: 1s;
+filter: brightness(10%);
+
+}
+
+
